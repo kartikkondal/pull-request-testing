@@ -1,7 +1,9 @@
 def fact(number):
-  total = 1
-  for i in range(1,number+1):
-    total *= i
-   return total
+  if number == 1:
+    return 1
+  return number * fact(number-1)
+
+
+  
    
    
